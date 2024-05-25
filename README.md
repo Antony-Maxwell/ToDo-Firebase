@@ -38,7 +38,7 @@ This is a simple and efficient Todo App built with Flutter. It allows users to m
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/todo_app.git
+git clone https://github.com/Antony-Maxwell/ToDo-Firebase.git
 cd todo_app
 ```
 
