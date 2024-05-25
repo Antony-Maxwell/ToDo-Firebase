@@ -1,55 +1,96 @@
-<h1 align="center">
-  <br>
-  <a href=""><img src="https://user-images.githubusercontent.com/78314165/150666685-7954de01-26c0-4d20-8d65-a238ff85efb0.png" alt="Todo" width="200"></a>
-  <br>
-  Tasks - Simple & Clean
-  <br>
-</h1>
+# Todo App
 
-<h4 align="center">A minimal todo app made using <a href="https://flutter.dev" target="_blank">Flutter</a>.</h4>
+## Description
+This is a simple and efficient Todo App built with Flutter. It allows users to manage their tasks with features like creating, updating, reading, and deleting tasks. The app supports email and password login and signup, and uses Firebase for data storage. Additionally, it includes local notifications to remind users of their tasks 10 minutes before the scheduled time.
 
-## Screenshots
+## Features
 
-||||
-|--|--|--|
-| ![login](./Preview/LoginScreen.png) | ![add_task](./Preview/TaskScreen.png) |![edit_task](./Preview/TaskEditScreen.png) |
-| ![main_screen](./Preview/MainScreen.png) | ![home_screen](./Preview/HomeScreen.png) |![all_tasks](./Preview/AllTasksScreen.png) |
-| ![filtered_screen](./Preview/FilteredScreen.png) | ![search_screen](./Preview/SearchScreen.png) |![search_screen](./Preview/SearchScreen1.png) |
+- **Email and Password Login and Signup**
+  - Users can register with their email and password.
+  - Users can log in using their registered email and password.
 
-## Key Features
+- **Firebase for Data Storage**
+  - All user data and tasks are securely stored in Firebase Firestore.
+  - Real-time synchronization of data.
 
-* Multi-list Todo app
-* User Authentication using Firebase Auth
-* Tasks are stored in Firestore DB
-* Tasks can be added, deleted, marked as done
-* Tasks can be scheduled at a specific date and time
-* Multi-color theme
-* Minimal and clean
+- **Local Notifications for Reminders**
+  - The app uses Flutter Local Notifications to send reminders.
+  - Reminders notify users 10 minutes before the scheduled task time.
 
-# Command
-### Install dependencies
+- **Task Management**
+  - Users can seamlessly create new tasks.
+  - Users can update existing tasks.
+  - Users can delete tasks.
+  - Users can read and manage their tasks effortlessly.
 
-```sh
+## Installation
+
+### Prerequisites
+
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Firebase Account: [Create Firebase Project](https://firebase.google.com/)
+
+### Steps
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Antony-Maxwell/ToDo-Firebase.git
+cd todo_app
+```
+
+2. **Install dependencies**
+
+```bash
 flutter pub get
 ```
 
-### Run application
+3. **Configure Firebase**
 
-```sh
-flutter emulators --launch <emulator_name>
+- Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+- Add an Android/iOS app to your Firebase project.
+- Follow the instructions to download the `google-services.json` (for Android) or `GoogleService-Info.plist` (for iOS) file and place it in the appropriate directory in your Flutter project.
+
+4. **Run the app**
+
+```bash
 flutter run
 ```
 
-### Build
+## Usage
 
-```sh
-flutter build apk
-```
+1. **Login/Signup**
+   - Open the app.
+   - Sign up using your email and password, or log in if you already have an account.
 
+2. **Manage Tasks**
+   - Create new tasks by tapping the 'Add Task' button.
+   - Update existing tasks by tapping on the task and modifying the details.
+   - Delete tasks by swiping left or right on the task.
+   - View all your tasks in a neatly organized list.
 
-# Tech Stack
+3. **Reminders**
+   - Set a date and time for your tasks.
+   - Receive a notification 10 minutes before the scheduled time to remind you of your task.
 
-- [Flutter](https://flutter.dev)
-- [Getx](https://pub.dev/packages/get) // State management
-- [Firebase](https://firebase.google.com/) // Authentication
-- [Firestore](https://firebase.google.com/products/firestore) // Database
+## Screenshots
+
+*Include some screenshots of your app here.*
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-branch`
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Flutter](https://flutter.dev/)
+- [Firebase](https://firebase.google.com/)
+- [Flutter Local Notifications](https://pub.dev/packages/flutter_local_notifications)
