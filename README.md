@@ -73,10 +73,6 @@ flutter run
    - Set a date and time for your tasks.
    - Receive a notification 10 minutes before the scheduled time to remind you of your task.
 
-## Screenshots
-
-*Include some screenshots of your app here.*
-
 ## Contributing
 
 1. Fork the repository.
