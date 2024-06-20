@@ -10,10 +10,12 @@ class ToDoTextFeild extends StatelessWidget {
     super.key,
     required this.titleEditingController,
     required this.detailEditingController,
+    required this.formKey,
   });
 
   final TextEditingController titleEditingController;
   final TextEditingController detailEditingController;
+  final GlobalKey<FormState> formKey;
 
   @override
   Widget build(BuildContext context) {

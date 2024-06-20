@@ -67,6 +67,10 @@ class _MainScreenState extends State<MainScreen> {
                       alignment: Alignment.centerLeft,
                       child: Text(
                         "Lists",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                        ),
                       )),
                   const SizedBox(
                     height: 30.0,

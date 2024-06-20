@@ -14,7 +14,7 @@ const tertiaryColor = Color.fromARGB(255, 82, 81, 81);
 //   color: primaryColor,
 //   fontWeight: FontWeight.bold,
 // );
-TextStyle infoTextStyle = const TextStyle(color: Colors.white, fontSize: 23.0);
+TextStyle infoTextStyle = const TextStyle(color: Colors.black, fontSize: 23.0);
 TextStyle heading(color) =>
     TextStyle(color: color, fontSize: 50.0, fontWeight: FontWeight.bold);
 TextStyle formInputText = const TextStyle(color: Colors.white, fontSize: 20);
@@ -123,22 +123,6 @@ InputDecoration passwordInputDecoration(
             onPressed: onPressed),
         hintStyle: hintTextStyle);
 
-// TextStyle optionsTextStyle = GoogleFonts.notoSans(
-//   fontSize: 17.0,
-//   color: const Color(0xFFEAEAEA),
-// );
-
-// TextStyle todoTitleStyle(condition) => GoogleFonts.notoSans(
-//       color: const Color(0xFFA8A8A8),
-//       fontSize: 23.0,
-//       decoration:
-//           (condition) ? TextDecoration.lineThrough : TextDecoration.none,
-//       decorationColor: primaryColor,
-//       decorationThickness: 2,
-//     );
-
-//Themes
-
 Theme timePickerTheme(child) => Theme(
       data: ThemeData.dark().copyWith(
         timePickerTheme: TimePickerThemeData(
@@ -169,7 +153,7 @@ Theme timePickerTheme(child) => Theme(
 Theme datePickerTheme(child) => Theme(
       data: ThemeData.dark().copyWith(
           colorScheme: ColorScheme.dark(
-        surface: primaryColor,
+        surface: Colors.black,
         secondary: primaryColor,
         onPrimary: Colors.white,
         onSurface: Colors.white,

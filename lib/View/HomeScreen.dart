@@ -29,8 +29,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: false,
-          title: Text(arrayController.arrays[widget.index!].title!,
-             ),
+          title: Text(
+            arrayController.arrays[widget.index!].title!,
+          ),
         ),
         extendBodyBehindAppBar: true,
         body: Obx(() => Container(
@@ -38,19 +39,25 @@ class _HomeScreenState extends State<HomeScreen> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
               child: (arrayController.arrays[widget.index!].todos!.isEmpty)
-                  ? Column(
+                  ? const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const Center(
+                        Center(
                           child: Icon(Icons.task,
-                              color: Colors.white, size: 120.0),
+                              color: Colors.black, size: 120.0),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 10.0,
                         ),
                         Center(
-                            child: Text('Add new tasks', style: infoTextStyle)),
+                          child: Text(
+                            'Add new tasks',
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ],
                     )
                   : GetX<ArrayController>(
@@ -101,12 +108,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                                arrayController
-                                                        .arrays[widget.index!]
-                                                        .todos![index]
-                                                        .title ??
-                                                    '',
-                                                ),
+                                              arrayController
+                                                      .arrays[widget.index!]
+                                                      .todos![index]
+                                                      .title ??
+                                                  '',
+                                            ),
                                             Icon(
                                               Icons.arrow_forward_ios,
                                               color: primaryColor,
